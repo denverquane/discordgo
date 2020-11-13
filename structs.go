@@ -834,9 +834,9 @@ type Relationship struct {
 // A TooManyRequests struct holds information received from Discord
 // when receiving a HTTP 429 response.
 type TooManyRequests struct {
-	Bucket        string  `json:"bucket"`
-	Message       string  `json:"message"`
-	RetryAfterSec float64 `json:"retry_after"`
+	Bucket     string  `json:"bucket"`
+	Message    string  `json:"message"`
+	RetryAfter float64 `json:"retry_after"`
 }
 
 // A ReadState stores data on the read state of channels.
